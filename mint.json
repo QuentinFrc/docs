@@ -53,6 +53,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
+        "MVP",
         "quickstart",
         "development"
       ]
