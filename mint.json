@@ -1,15 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "WebSpace SAAS - (not named yet)",
+  "name": "Spacing.dev",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#FF5A4F",
+    "light": "#FF5A4F",
+    "dark": "#FF5A4F",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -17,60 +17,84 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Join the waitlist",
+      "url": "#"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://github.com/QuentinFrc/docs",
+    "type": "github"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Intégrations",
+      "url": "pages/integrations"
     }
   ],
-  "anchors": [],
+  "anchors": [
+    {
+      "name": "API References",
+      "icon": "code",
+      "url": "api-references"
+    },
+    {
+      "name": "Content",
+      "icon": "pencil",
+      "url": "content"
+    },
+    {
+      "name": "Nous contacter",
+      "icon": "envelope",
+      "url": "https://mintlify.com/contact-us"
+    }
+  ],
   "navigation": [
     {
       "group": "Get Started",
+      "icon": "Check",
       "pages": [
-        "introduction",
-        "MVP",
-        "quickstart",
-        "development"
+        "pages/documentation/introduction",
+        "setup"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Fonctionnalités",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        {
+          "group": "Block",
+          "pages": [
+            "pages/documentation/features/core",
+            "pages/documentation/features/brief",
+            "pages/documentation/features/embeds",
+            "pages/documentation/features/payment",
+            "pages/documentation/features/feedback"
+          ]
+        },
+        "pages/documentation/features/request"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Use Cases",
       "pages": [
-        "api-reference/introduction"
+        {
+          "group": "Créateurs",
+          "pages": [
+            "pages/documentation/use-cases/developer",
+            "pages/documentation/use-cases/designer",
+            "pages/documentation/use-cases/agency"
+          ]
+        }
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Intégrations",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "pages/integrations/introduction"
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  "feedback": {
+    "suggestEdit": true
+  },
+  "footerSocials": {}
 }
