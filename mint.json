@@ -60,16 +60,7 @@
     {
       "group": "Fonctionnalités",
       "pages": [
-        {
-          "group": "Block",
-          "pages": [
-            "pages/documentation/features/core",
-            "pages/documentation/features/brief",
-            "pages/documentation/features/embeds",
-            "pages/documentation/features/payment",
-            "pages/documentation/features/feedback"
-          ]
-        },
+        "pages/documentation/features/frame",
         "pages/documentation/features/request"
       ]
     },

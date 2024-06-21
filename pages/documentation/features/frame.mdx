@@ -1,0 +1,58 @@
+---
+title: Frame
+description: Les frames composent vos espaces client.
+icon: 'frame'
+---
+
+## Introduction
+
+Un espace client est composé de 1 ou plusieurs frames. Chaque frame est une page / vue de votre espace client.
+
+Exemple de frame: **Brief**, **Maquette**, **Facturation**, ...
+
+Vous pouvez créer autant de frames que vous le souhaitez, choisir quelles frames sont accessibles par vos clients, et les organiser dans l'ordre que vous souhaitez.
+
+## Structure
+
+Chaque frame est composée de 2 éléments:
+
+1. **Header**: Le header de la frame. Vous pouvez y ajouter un titre, une description et des métadonnées.
+2. **Content**: Le contenu de la frame. Vous pouvez y ajouter des documents, des images, des vidéos, ainsi que les [intégrations disponibles](/pages/integrations) dans spacing.
+
+Exemple:
+
+<Frame caption="Exemple d'une frame brief pour un projet">
+	<img src="/images/frame-example-1.png" />
+</Frame>
+
+<Frame caption="Exemple de frame pour un projet de site web">
+	<img src="/images/frame-example-2.png" />
+</Frame>
+
+## Métadonnées
+
+Les métadonnées sont des informations supplémentaires que vous pouvez ajouter à chaque frame.
+
+Exemple de métadonnées:
+
+- **Date de création**: La date de création de la frame.
+- **Date de modification**: La date de dernière modification de la frame.
+- **Statut**: Le statut de la frame (En cours, Terminé, En attente, ...).
+- **Tags**: Des tags pour classer la frame.
+- **Liens**: Des liens vers d'autres frames ou des ressources externes.
+
+## Contenu
+
+Le contenu d'une frame peut être composé de plusieurs éléments:
+
+- **Documents**: Des documents rédigés via l'éditeur.
+- **Images**: Des images pour illustrer la frame.
+- **Vidéos**: Des vidéos pour expliquer un concept.
+- **Intégrations**: Des intégrations avec d'autres services (Stripe, Figma, ...).
+- **Actions**: Vous pouvez ajouter des actions pour permettre à vos clients d'interagir avec la frame.
+
+Exemple d'action: "Valider le brief" -> action: `setMetadata("Statut", "Validé")`
+
+<Frame>
+	<img src="/images/frame-action-example.png" />
+</Frame>
